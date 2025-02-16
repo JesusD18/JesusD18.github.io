@@ -1,0 +1,141 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #091E3E, #142850);
+    padding: 40px 20px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 5px 20px rgba(0, 150, 255, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0px 0px 15px rgba(0, 150, 255, 0.8);
+}
+
+.resaltado {
+    color: #ffcc00;
+    text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.9);
+}
+
+.logo {
+    width: 120px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.slogan {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #d1d1d1;
+}
+
+/* Tarjetas */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    max-width: 800px;
+    text-align: justify;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 150, 255, 0.3);
+}
+
+.card h2 {
+    color: #00c6ff;
+    text-align: center;
+}
+
+/* Grid de información */
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-grid .card {
+    width: 320px;
+    text-align: center;
+}
+
+/* Organigrama */
+.organigrama-container {
+    text-align: center;
+}
+
+.organigrama {
+    width: 50%;
+    max-width: 500px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 150, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.organigrama:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 150, 255, 0.5);
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(90deg, #091E3E, #142850);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 30px 30px 0 0;
+    font-size: 14px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Botones interactivos */
+button {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.6);
+    transform: scale(1.1);
+}
